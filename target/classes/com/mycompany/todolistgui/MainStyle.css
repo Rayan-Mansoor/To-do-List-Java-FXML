@@ -1,0 +1,66 @@
+.root{
+    -fx-background-image: url("bgi2.jpg");
+    -fx-background-size: 800px 450px;
+}
+
+.button{ 
+    -fx-Background-color: #00416a;
+    -fx-text-fill: #ffffff; 
+    -fx-background-radius: 10;
+    
+}
+
+.button:hover{
+    -fx-Background-color: #0fc0fc;
+}
+
+
+.text-field {
+    -fx-prompt-text-fill: #808080;
+    -fx-background-color: #d3d3d3;
+}
+
+.text-field:focused{
+    -fx-background-color: #ffffff;
+}
+
+
+#info3{
+    -fx-text-fill: #808080;
+}
+.radio-button{
+    -fx-text-fill: #ffffff; 
+}
+.radio-button:selected .radio .dot {
+    -fx-background-color: #0000ff;
+    -fx-background-insets: 0;
+}
+
+#title{
+    -fx-Background-color: #111111;
+    -fx-text-fill: #ffffff; 
+}
+
+#sublbl,#dislbl,#loclbl,#datlbl,#timelbl{
+    -fx-text-fill: #ffffff;
+}
+
+.list-view{
+    -fx-background-radius: 10;
+    -fx-border-width: 5px;
+    -fx-border-color: #87ceeb;
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell:odd:filled{ 
+    -fx-background-color: white;
+    -fx-text-fill: black;
+
+}
+
+.list-cell:even:filled {
+    -fx-background-color: black;
+    -fx-text-fill: #ffffff;
+
+}
+

@@ -1,0 +1,25 @@
+.root{
+    -fx-Background-color:#111111;
+    
+}
+
+.button{ 
+    -fx-Background-color: #00416a;
+    -fx-text-fill: #ffffff; 
+    -fx-background-radius: 10;
+    
+}
+
+.button:hover{
+    -fx-Background-color: #0fc0fc;
+}
+
+
+.text-field {
+    -fx-prompt-text-fill: #808080;
+    -fx-background-color: #d3d3d3;
+}
+
+.text-field:focused{
+    -fx-background-color: #ffffff;
+}
