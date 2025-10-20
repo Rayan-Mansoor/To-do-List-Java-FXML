@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="511.0" prefWidth="762.0"
+            stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.todolistgui.SecondaryController">
+   <children>
+      <TextField fx:id="recipient" layoutX="57.0" layoutY="35.0" prefHeight="26.0" prefWidth="187.0"
+                 promptText="Recipient email"/>
+      <Button fx:id="emailBtn" layoutX="113.0" layoutY="110.0" mnemonicParsing="false" onAction="#sendEmail" text="Send Email"/>
+      <Label fx:id="EmailSuccess"
+            AnchorPane.topAnchor="159.0"
+            AnchorPane.leftAnchor="0.0"
+            AnchorPane.rightAnchor="0.0"
+            alignment="CENTER"
+            textAlignment="CENTER"
+            textFill="#00f800">
+         <font><Font size="11.0"/></font>
+      </Label>
+   </children>
+</AnchorPane>

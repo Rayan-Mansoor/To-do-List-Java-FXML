@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="511.0" prefWidth="762.0"
+            stylesheets="@MainStyle.css"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.todolistgui.PrimaryController">
+   <children>
+      <Label fx:id="datlbl" layoutX="38.0" layoutY="229.0" text="Date">
+         <font><Font name="Algerian" size="12.0" /></font>
+      </Label>
+      <Label fx:id="loclbl" layoutX="26.0" layoutY="186.0" text="Location">
+         <font><Font name="Algerian" size="12.0" /></font>
+      </Label>
+      <Label fx:id="dislbl" layoutX="19.0" layoutY="131.0" text="Description">
+         <font><Font name="Algerian" size="12.0" /></font>
+      </Label>
+      <Label fx:id="sublbl" layoutX="28.0" layoutY="76.0" text="Subject">
+         <font><Font name="Algerian" size="12.0" /></font>
+      </Label>
+      <Label fx:id="title" alignment="CENTER" layoutX="321.0" layoutY="20.0"
+             prefHeight="27.0" prefWidth="120.0" text="Todo List">
+         <font><Font name="SansSerif Bold Italic" size="24.0" /></font>
+      </Label>
+      <Label fx:id="timelbl" layoutX="37.0" layoutY="270.0" text="Time">
+         <font><Font name="Algerian" size="14.0" /></font>
+      </Label>
+
+      <TextField fx:id="subject" layoutX="104.0" layoutY="63.0" prefHeight="26.0" prefWidth="192.0"/>
+      <TextField fx:id="description" layoutX="104.0" layoutY="118.0" prefHeight="26.0" prefWidth="192.0"/>
+      <TextField fx:id="location" layoutX="104.0" layoutY="173.0" prefHeight="26.0" prefWidth="192.0"/>
+      <DatePicker fx:id="date" editable="false" layoutX="104.0" layoutY="223.0" prefHeight="26.0" prefWidth="192.0"/>
+      <Spinner fx:id="hr" layoutX="105.0" layoutY="265.0" prefHeight="26.0" prefWidth="58.0"/>
+      <Spinner fx:id="mins" layoutX="161.0" layoutY="265.0" prefHeight="26.0" prefWidth="58.0"/>
+
+      <RadioButton fx:id="am" layoutX="228.0" layoutY="269.0" mnemonicParsing="false" text="AM">
+         <toggleGroup><ToggleGroup fx:id="AMPM"/></toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="pm" layoutX="278.0" layoutY="263.0" mnemonicParsing="false"
+                   prefHeight="30.0" prefWidth="58.0" text="PM" toggleGroup="$AMPM"/>
+
+      <ListView fx:id="LV" editable="true" layoutX="550.0" layoutY="48.0" prefHeight="448.0" prefWidth="198.0"/>
+      <ListView fx:id="show" editable="true" layoutX="14.0" layoutY="364.0" prefHeight="120.0" prefWidth="192.0"/>
+
+      <TextField fx:id="enter" layoutX="240.0" layoutY="374.0" prefHeight="26.0" prefWidth="274.0"
+                 promptText="Enter Subject Name to Search/Update/Delete"/>
+
+      <!-- UPDATED onAction handlers -->
+      <Button fx:id="add"    layoutX="88.0"  layoutY="305.0" mnemonicParsing="false" onAction="#addTask"            text="Add Task"/>
+      <Button fx:id="search" layoutX="241.0" layoutY="413.0" mnemonicParsing="false" onAction="#searchTask"         text="Search Task"/>
+      <Button fx:id="update" layoutX="340.0" layoutY="413.0" mnemonicParsing="false" onAction="#prepareUpdateTask"  text="Update Task"/>
+      <Button fx:id="delete" layoutX="439.0" layoutY="413.0" mnemonicParsing="false" onAction="#deleteTask"         text="Delete Task"/>
+      <Button fx:id="email"  layoutX="318.0" layoutY="463.0" mnemonicParsing="false" onAction="#openEmailDialog"    text="Email The ToDo List"/>
+
+      <Label fx:id="info"  layoutX="183.0" layoutY="311.0" prefHeight="18.0" prefWidth="182.0" textFill="RED"/>
+      <Label fx:id="info1" layoutX="183.0" layoutY="311.0" prefHeight="18.0" prefWidth="182.0" textFill="GREEN"/>
+
+      <Label fx:id="update_prompt" layoutX="56.0" layoutY="33.0" prefHeight="30.0" prefWidth="198.0" textFill="#5639ff">
+         <font><Font name="Arial Rounded MT Bold" size="14.0"/></font>
+      </Label>
+
+      <Label fx:id="info3" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="378.0"
+             prefHeight="18.0" prefWidth="169.0" text="Your Search Results Appear Here" textFill="#80808087">
+         <font><Font size="11.0"/></font>
+      </Label>
+
+      <Label fx:id="info2" layoutX="582.0" layoutY="63.0" text="" textFill="GREY">
+         <font><Font size="11.0"/></font>
+      </Label>
+   </children>
+</AnchorPane>
